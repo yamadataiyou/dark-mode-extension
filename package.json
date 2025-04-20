@@ -1,0 +1,25 @@
+{
+    "name": "dark-mode-switcher",
+    "version": "1.0.0",
+    "description": "Chrome拡張機能：ウェブページのダークモードを切り替え、輝度を調整できる拡張機能",
+    "type": "module",
+    "scripts": {
+      "dev": "vite",
+      "build": "vite build",
+      "preview": "vite preview"
+    },
+    "keywords": [
+      "chrome-extension",
+      "dark-mode",
+      "brightness",
+      "vue3"
+    ],
+    "dependencies": {
+      "vue": "^3.3.4"
+    },
+    "devDependencies": {
+      "@crxjs/vite-plugin": "^2.0.0-beta.18",
+      "@vitejs/plugin-vue": "^4.2.3",
+      "vite": "^4.4.9"
+    }
+  }

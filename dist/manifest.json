@@ -1,0 +1,43 @@
+{
+  "manifest_version": 3,
+  "name": "ダークモード切り替え",
+  "version": "1.0.0",
+  "description": "ウェブページのダークモードを切り替え、輝度を調整できる拡張機能",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "service-worker-loader.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "src/popup/index.html"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "assets/content.js-loader-d772f554.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "resources": [
+        "assets/content.js-91fa7e79.js"
+      ],
+      "use_dynamic_url": false
+    }
+  ]
+}
